@@ -1,0 +1,42 @@
+.main{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+  padding:40rpx;
+}
+.main_d1{
+    width:90px;
+    margin-bottom:30rpx;
+}
+.movie_img{
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.movie_img image{
+    width:100%;
+    height:130px;
+
+}
+.movie_title,.movie_score{
+    color:#9b9b9b;
+    font-size:12px;
+}
+.movie_score{
+    text-align: center;
+}
+
+.movie_score{
+    display:flex;
+    flex-direction: column;
+}
+.movie_title{
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  

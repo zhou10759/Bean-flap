@@ -1,0 +1,13 @@
+ <view class="main">
+        <view class="main_d1" wx:for="{{list}}" wx:key="index">
+                <view class="movie_img">
+                        <image src="{{item.img_url}}"  mode="aspectFill" lazy-load></image>
+                         <text class="movie_title">{{item.title}}</text>
+                </view>
+                <view class="movie_score">
+                        <text class="comment_d1"   wx:if="{{item.score!=null}}">★★★★★</text>
+                        <text class="comment_d3"   wx:if="{{item.score==null}}">暂无评分！</text>
+                        <text class="comment_d2"   style="width:{{item.score*5}}%" wx:if="{{item.score!=null}}">★★★★★</text>
+                </view>
+        </view>
+ </view>

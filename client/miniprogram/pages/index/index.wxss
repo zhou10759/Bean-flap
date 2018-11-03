@@ -1,0 +1,59 @@
+/* 搜索部分*/
+.index_search{
+  padding:16rpx;
+  background-color: #0f0;
+}
+.index_search input{
+  background-color: #fff;
+  border-radius: 6rpx;
+  font-size:14px;
+  text-align: center;
+}
+/*主体部分-第一块-近期上映*/
+.video_1{
+  padding:30rpx;
+}
+.video_1 .video_1_header{
+  display:flex;
+  justify-content:space-between;
+}
+.video_1 .video_1_header text{
+  font-size:14px;
+  font-weight: bold;
+}
+.video_1 .video_1_header navigator{
+  font-size:14px;
+  color:#0f0;
+}
+.video_1_main{
+  display:flex;
+}
+.video_1_main view{
+  text-align: center;
+}
+.video_1_main_d1{
+  display:flex;
+  flex-direction: column;
+  position: relative;
+  width:100px;
+  margin-left:12rpx;
+}
+.video_1_main_d1 image{
+  width:100px;
+  height:145px;
+  margin:16rpx 0 10rpx 0;
+}
+.video_1_main_d1 .video_title{
+  font-size:14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+/**/
+
+
+
+
+
