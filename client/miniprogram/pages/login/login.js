@@ -9,8 +9,10 @@ Page({
     upwd:""
   },
   formSubmit:function(e){
-      console.log("from表单获取的数据为 ",e.datail.value);
-
+      this.setData({
+        uname:e.detail.value.uname,
+        upwd:e.detail.value.upwd
+      })
    },
 
   /**
