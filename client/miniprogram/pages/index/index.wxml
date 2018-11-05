@@ -54,9 +54,11 @@
   <scroll-view scroll-x="true" >
       <view class="video_1_main" >
         <view class="video_1_main_d1" wx:for="{{list}}" wx:key="index">
-            <image src="{{item.img_url}}"      class="video_img" mode="aspectFill" lazy-load>  </image>
+            <navigator url="/pages/details/details?id={{item.id}}">
+               <image src="{{item.img_url}}"      class="video_img" mode="aspectFill" lazy-load>  </image>
+            </navigator>
             <text class="video_title">{{item.title}}</text>
-            <view>
+            <view class="video_xingxing">
               <text class="comment_d1" wx:if="{{item.score!=null}}">★★★★★{{" "+item.score}}</text>
               <text class="comment_d3" wx:if="{{item.score==null}}">暂无评分！</text>
               <text class="comment_d2" style="width:{{item.score*5}}%" wx:if="{{item.score!=null}}">★★★★★</text>

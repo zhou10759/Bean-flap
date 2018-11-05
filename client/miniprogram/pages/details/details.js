@@ -1,35 +1,25 @@
-// miniprogram/pages/list/list.js
+// miniprogram/pages/details/details.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    list:[]
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    wx.request({
-      url:"http://127.0.0.1:3000/index/recent",
-      success:(res) =>{
-       // console.log(res);
-        res = res.data.slice(0,7);
-        this.setData({
-          list:res
-        })
-      }
-    })
-    
+    console.log(options)
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    
+
   },
 
   /**

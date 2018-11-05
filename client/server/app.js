@@ -6,6 +6,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 /*引入路由模块*/
 const index = require("./routes/index.js");
+const detail = require("./routes/detail.js");
 
 var app = express();
 var server = app.listen(3000);
@@ -17,4 +18,5 @@ app.use(bodyParser.urlencoded({extended:false}));
 
 /*使用路由器来管理路由*/
 app.use("/index",index);
+app.use("/detail",detail);
 

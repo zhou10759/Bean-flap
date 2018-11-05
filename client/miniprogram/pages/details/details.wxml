@@ -1,0 +1,122 @@
+
+    <view class="details_header">
+      <view class="details_header2">
+        <view class="movie_title">
+            <view class="title_image">
+                <image src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2537214991.webp" mode="aspectFill" lazy-load></image>
+            </view>
+            <view class="title_chat">
+                <text>胡桃夹子和四个王国</text>
+                <text>The  Nutcracker And...</text>
+                <view class="title_score">
+                    <text>6.1</text>
+                    <view>
+                        <text class="comment_score1">★★★★★</text>
+                        <text class="comment_score2">★★★★★</text>
+                        <text class="comment_score3">150697人评价</text>
+                    </view>
+                </view>
+            </view>
+        </view>
+      </view>
+    </view>
+ <view class="details_main">
+        <view class="movie_time">
+            <text>99分钟 奇幻/冒险</text>
+            <text>2018-11-02（中国大陆）上映 美国</text>
+            <text>拉斯·霍尔斯道姆（导演）/ 乔·庄斯顿（导演）/麦肯吉·弗依/摩根·弗里曼/凯拉·奈特莉</text>
+        </view>
+        <view class="movie_button">
+            <button type="default">想看</button>
+            <button type="default">看过</button>
+        </view>
+        <view class="movie_introduction">
+            <text class="introduction_d1">胡桃夹子和四个王国的剧情简介</text>
+            <text class="introduction_d2">克拉拉一直在寻找一把钥匙——这把与众不同的钥匙将可以开启已故母亲装有无价之宝的盒子。在教父德罗塞尔梅耶举办的一次节日聚会上，一根金线指引着她找到了这把梦寐以求的钥匙，却在瞬间消失进入一个陌生而神秘的平行世界。在平行世界里，克拉拉结识了士兵菲利普、一群老鼠、以及分别掌管雪花王国、鲜花王国、糖果王国的三位国王。克拉拉和菲利普必须勇敢地接受第四位国王——暴君姜母的考验，才能够找回钥匙、并将和平重新带回这个摇摇欲坠的平行世界。</text>
+        </view>
+        <view class="movie_comment">
+            <text class="comment_title">短评（7846）</text>
+            <view class="comment_main">
+                <view class="comment_adderss">
+                    <image src="https://img3.doubanio.com/icon/up52057602-1.jpg"  mode="aspectFill" lazy-load></image>   
+                </view>
+                <view class="comment_xinxi">
+                    <view class="xinxi_name">
+                        用户名称
+                        <text class="xinxi_xingxing1">★★★★★</text>
+                        <text class="xinxi_xingxing2">★★★★★</text>
+                    </view>
+                    <view class="xinxi_time">
+                        2018-11-02 00:18:52
+                    </view>
+                    <view class="xinxi_content">
+                        女主演技太棒了！
+                    </view>
+                </view>
+            </view>
+            <view class="comment_main">
+                <view class="comment_adderss">
+                    <image src="https://img3.doubanio.com/icon/up52057602-1.jpg"  mode="aspectFill" lazy-load></image>   
+                </view>
+                <view class="comment_xinxi">
+                    <view class="xinxi_name">
+                        星野流魂
+                        <text class="xinxi_xingxing1">★★★★★</text>
+                        <text class="xinxi_xingxing2">★★★★★</text>
+                    </view>
+                    <view class="xinxi_time">
+                        2018-11-02 00:18:52
+                    </view>
+                    <view class="xinxi_content">
+                        有些人一看就是好演员。女主以后戏路不愁，我说的。
+                    </view>
+                </view>
+            </view>
+            <view class="comment_main">
+                <view class="comment_adderss">
+                    <image src="https://img3.doubanio.com/icon/up52057602-1.jpg"  mode="aspectFill" lazy-load></image>   
+                </view>
+                <view class="comment_xinxi">
+                    <view class="xinxi_name">
+                        用户名称
+                        <text class="xinxi_xingxing1">★★★★★</text>
+                        <text class="xinxi_xingxing2">★★★★★</text>
+                    </view>
+                    <view class="xinxi_time">
+                        2018-11-02 00:18:52
+                    </view>
+                    <view class="xinxi_content">
+                        女主演技太棒了！
+                    </view>
+                </view>
+            </view>
+            <view class="comment_main">
+                <view class="comment_adderss">
+                    <image src="https://img3.doubanio.com/icon/up52057602-1.jpg"  mode="aspectFill" lazy-load></image>   
+                </view>
+                <view class="comment_xinxi">
+                    <view class="xinxi_name">
+                        用户名称
+                        <text class="xinxi_xingxing1">★★★★★</text>
+                        <text class="xinxi_xingxing2">★★★★★</text>
+                    </view>
+                    <view class="xinxi_time">
+                        2018-11-02 00:18:52
+                    </view>
+                    <view class="xinxi_content">
+                        女主演技太棒了！
+                    </view>
+                </view>
+            </view>
+            <navigator url="#" class="comment_footer">查看更多短评</navigator>
+        </view>
+        <view class="movie_footer">
+            <view class="comment_title d1">影评（120）</view>
+            <view class="d1">电影和原著的关系：这是改编还是续集？</view>
+            <view class="d_f">
+            子镭***** <text class="comment_title">22有用</text>
+            </view>
+        </view>
+            <navigator url="#" class="comment_footer">查看更多短评</navigator>
+
+</view>

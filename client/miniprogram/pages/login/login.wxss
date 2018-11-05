@@ -1,0 +1,38 @@
+.login{
+    padding:30px 10px;
+}
+
+.title{
+    text-align: center;
+    color:#00b600;
+    font-size:24px;
+    margin-bottom:30px;
+}
+.uname input,.upwd input{
+    border:1px solid #999;
+    font-size:14px;
+    padding:6px;
+}
+.uname input{
+    border-bottom:1px solid #fff;
+    border-radius: 5px 5px 0 0;
+    
+}
+.upwd input{
+    border-radius: 0 0 5px 5px;
+}
+.submit button{
+    margin-top:20px;
+    height:36px;
+    border-radius: 5px;
+    line-height: 36px;
+    color:#fff;
+    font-size:14px;
+    background:#00b600;
+}
+.register{
+    text-align: center;
+    color:#00b600;
+    font-size:14px;
+    margin-top:30px;
+}

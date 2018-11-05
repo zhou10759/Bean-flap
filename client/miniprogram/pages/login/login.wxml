@@ -1,0 +1,17 @@
+ <view class="login">
+    <view class="title">
+        欢迎来到豆瓣
+    </view>
+    <form bindsubmit="formSubmit" >
+        <view class="uname">
+        <input type="text" name="uname" placeholder="邮箱/手机号/用户名"/>
+        </view>
+        <view class="upwd">
+        <input type="password" name="upwd" placeholder="密码"  />
+        </view>
+        <view class="submit">
+            <button formType="submit">登录</button>
+        </view>
+    </form>
+    <view class="register">注册豆瓣账户</view>
+</view>

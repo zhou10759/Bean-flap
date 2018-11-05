@@ -1,7 +1,7 @@
 /* 搜索部分*/
 .index_search{
   padding:16rpx;
-  background-color: #0f0;
+  background-color: #00b600;
 }
 .index_search input{
   background-color: #fff;
@@ -23,7 +23,7 @@
 }
 .video_1 .video_1_header navigator{
   font-size:14px;
-  color:#0f0;
+  color:#00b600;
 }
 .video_1_main{
   display:flex;
@@ -43,11 +43,9 @@
   height:145px;
   margin:16rpx 0 10rpx 0;
 }
-.video_1_main_d1 .video_title{
-  font-size:14px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+.video_xingxing{
+  float:left;
+  position:relative;
 }
 
 

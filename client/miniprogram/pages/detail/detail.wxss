@@ -4,16 +4,14 @@
   justify-content: space-between;
   padding:40rpx;
 }
-.main_d1{
-    width:90px;
-    margin-bottom:30rpx;
-}
+
 .movie_img{
-    position: relative;
+    width:90px;
     text-align: center;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    display:flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom:46rpx;
 }
 .movie_img image{
     width:100%;
@@ -25,18 +23,15 @@
     font-size:12px;
 }
 .movie_score{
-    text-align: center;
-}
-
-.movie_score{
+    float:left;
     display:flex;
     flex-direction: column;
+    text-align: center;
+    position:relative;
 }
-.movie_title{
+.comment_d3{
+    margin-top:10rpx;
+}
 
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
 
   

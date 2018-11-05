@@ -1,35 +1,23 @@
-// miniprogram/pages/list/list.js
+// miniprogram/pages/login/login.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    list:[]
+    uname:"",
+    upwd:""
   },
+  formSubmit:function(e){
+      console.log("from表单获取的数据为 ",e.datail.value);
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-    wx.request({
-      url:"http://127.0.0.1:3000/index/recent",
-      success:(res) =>{
-       // console.log(res);
-        res = res.data.slice(0,7);
-        this.setData({
-          list:res
-        })
-      }
-    })
-    
-  },
+   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    
+
   },
 
   /**

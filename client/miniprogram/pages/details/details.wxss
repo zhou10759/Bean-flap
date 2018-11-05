@@ -1,0 +1,150 @@
+.details_header{
+    background:url("https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2537214991.webp") no-repeat;
+    background-size: cover;
+    width:100%;
+    height:170px;
+    position: relative;
+}
+.details_header2{
+    width:100%;
+    height:170px;
+    background:rgba(00, 00, 00, .6)
+}
+.movie_title{
+    margin:0 auto;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    left:10px;
+    bottom:-15px;
+    padding:0 6px;
+}
+
+.title_image{
+    
+}
+.title_image image{
+    width:80px;
+    height:120px;
+}
+
+.title_chat{
+    width:100%;
+    color:#fff;
+    font-size:18px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left:15px;
+}
+.title_score{
+    display:flex;
+}
+.title_score>text{
+    font-size:24px;
+}
+.title_score view{
+    display:flex;
+    flex-direction: column;
+    position: relative;
+    margin-left:6px;
+}
+
+.comment_score1,.comment_score2{
+    font-size:14px;
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+.comment_score1{color:#9b9b9b;}
+.comment_score2{
+    display: inline;
+  color:#f19e38;
+  overflow:hidden;
+}
+.comment_score3{
+    color:#f1f1f1;
+    margin-top:18px;
+    font-size:14px;
+    display:block;
+}
+
+.details_main{
+    padding:30px 15px;
+    font-size:14px;
+}
+.movie_time{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.movie_button{
+    margin-top:15px;
+    display:flex;
+    justify-content: space-between;
+}
+.movie_button button{
+    border:1px solid #f19e38;
+    width:45%;
+    height:30px;
+    color:#f19e38;
+    font-size:14px;
+    line-height: 30px;
+}
+.movie_introduction{
+    padding:15px 0;
+    display:flex;
+    flex-direction: column;
+
+}
+.movie_introduction .introduction_d1{
+    color:#999;
+    margin-bottom:10px;
+}
+ .comment_title{
+    color:#999;
+
+}
+.comment_main{
+    display:flex;
+    margin-top:10px;
+}
+.comment_adderss image{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;   
+}
+.comment_xinxi{
+    margin-left:10px;
+}
+.xinxi_xingxing1{
+    color:#9b9b9b;
+}
+.xinxi_xingxing2{
+    display: inline;
+  color:#f19e38;
+  overflow:hidden;
+  position: absolute;
+  left:121px;
+  width:50%;
+}
+.comment_xinxi .xinxi_time{
+    color:#999;
+    font-size:12px;
+}
+.comment_footer{
+    text-align: center;
+    margin-top:10px;
+    color:#00b600
+}
+.movie_footer{
+    padding:15px 0;
+}
+.d1{
+    margin-bottom:10px;
+}
+.d_f{
+    padding-bottom:10px;
+    border-bottom:1px solid #f1f1f1;
+}

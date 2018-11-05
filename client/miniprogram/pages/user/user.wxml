@@ -1,2 +1,13 @@
-<!--miniprogram/pages/user/user.wxml-->
-<text>miniprogram/pages/user/user.wxml</text>
+<view class="user_main">
+    <view class="user_login">
+     <navigator url="/pages/login/login" >
+        <button type="default" >登录</button>
+    </navigator>
+    </view>
+    <view class="user_headPortrait">
+        <image src="http://pic.51yuansu.com/pic3/cover/00/94/67/58dcd69ac0bf8_610.jpg" ></image>
+    </view>
+    <view class="user_str">
+        未登录
+    </view>
+</view>
