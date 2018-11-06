@@ -4,18 +4,17 @@
     </view>
     <form bindsubmit="formSubmit" >
         <view class="uname">
-        <input type="text" name="phone"  placeholder="邮箱/手机号/用户名"/>
+        <input type="text" name="uname"  placeholder="昵称"/>
         </view>
         <view class="upwd">
         <input type="password" name="upwd"  placeholder="密码"  />
         </view>
+        <view class="phone">
+        <input type="text" name="phone"  placeholder="手机号"  />
+        </view>
         <view class="submit">
-            <button formType="submit" bindtap="clicklogin">登录</button>
+            <button formType="submit" bindtap="clickregister">注册</button>
         </view>
     </form>
-    <view class="register">
-     <navigator url="/pages/register/register">
-        注册豆瓣账户
-    </navigator>
-    </view>
+
 </view>

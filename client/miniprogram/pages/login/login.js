@@ -1,18 +1,67 @@
 // miniprogram/pages/login/login.js
+var app=new getApp();
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    uname:"",
+    phone:"",
     upwd:""
   },
   formSubmit:function(e){
       this.setData({
-        uname:e.detail.value.uname,
+        phone:e.detail.value.phone,
         upwd:e.detail.value.upwd
       })
+      console.log("账号"+this.data.phone+" 密码 "+this.data.upwd)
+   },
+   clicklogin:function(options){
+     if(!(this.data.phone.length>1 || this.data.upwd.length>1)){  //非空验证
+        wx.showModal({    //模态框
+          title:"错误",   //标题
+          content:"用户名或密码不能为空",  //内容
+          confirmText:"确定", 
+          showCancel:false  //不显示取消按钮
+        });
+        return ;
+     }else{
+      wx.request({
+        url:"http://127.0.0.1:3000/user/login",
+        method:"POST",
+        data:{
+          phone:this.data.phone,
+          upwd:this.data.upwd
+        },
+        header: {
+          "Content-Type": "application/x-www-form-urlencoded"
+        },
+        success:(res)=>{
+          console.log(res.data);
+          if(res.data.code==1){
+            wx.showModal({
+              title:"成功",   //显示提示信息
+              content:"登录成功",
+              confirmText:"确定",
+              showCancel:false
+            });
+            wx.switchTab({  //登录成功 ，跳转到user页面
+              url: '/pages/user/user'
+            })
+            app.globalData.userInfo = res.data;
+          
+          }else{
+            wx.showModal({
+              title:"错误",   
+              content:"用户名或密码错误",
+              confirmText:"确定",
+              showCancel:false
+            });
+          }
+          
+        }
+      })
+    }
    },
 
   /**
