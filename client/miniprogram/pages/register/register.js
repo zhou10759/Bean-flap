@@ -18,12 +18,10 @@ Page({
   
   },
   clickregister:function(options){
-    var regphone = /^1\d{10}$/ ;
+    var regphone = /^1[0-9]\d{9}$/ ;
     var reguname = /^.{3,20}$/ ;
-    var regpwd = /^[a-zA-Z]\w{5,17}$/;
-    console.log(reguname.test(this.data.uname),this.data.uname)
-    console.log(reguname.test(this.data.phone),this.data.phone)
-    console.log(reguname.test(this.data.upwd),this.data.upwd)
+    var regupwd = /^.{6,20}$/ ;
+   
     if(!(this.data.phone.length>1 || this.data.uname.length>1 || this.data.upwd.length>1)){
       wx.showModal({
         title:"错误",   //显示提示信息
@@ -73,15 +71,26 @@ Page({
       },
       success:(res)=>{
         console.log(res.data);
-        wx.showModal({
-          title:"成功",   //显示提示信息
-          content:"注册成功，返回登录页",
-          confirmText:"确定",
-          showCancel:false
-        });
-        wx.switchTab({
-          url: '/pages/login/login'
-        })
+        if(res.code==1){
+              wx.showModal({
+                title:"成功",   //显示提示信息
+                content:"注册成功，返回登录页",
+                confirmText:"确定",
+                showCancel:false
+              });
+              wx.navigateTo({
+                url: '/pages/login/login'
+            })
+        }else{
+          wx.showModal({
+            title:"失败",   //显示提示信息
+            content:"手机号被占用，请重新输入",
+            confirmText:"确定",
+            showCancel:false
+          });
+        }
+        
+       
         
       }
     })

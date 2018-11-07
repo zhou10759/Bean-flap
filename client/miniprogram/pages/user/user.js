@@ -5,21 +5,47 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    list:[{phone:"",uname:"",upwd:""}],
+    isLogin:false
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
+  quit:function(){
+    wx.clearStorage()
+    this.setData({
+      isLogin:false
+    })
+    wx.switchTab({  //登录成功 ，跳转到user页面
+      url: '/pages/user/user'
+    })
+    
+  },
   onLoad: function (options) {
-
+    wx.getStorage({
+      key: 'zzz',
+      success: (res)=>{
+        console.log(res.data);
+        if(res.data.isLogin){
+          this.setData({
+            list:res.data,
+            isLogin:true
+          })
+          wx.switchTab({  //登录成功 ，跳转到user页面
+            url: '/pages/user/user'
+          })
+        }
+       
+      },
+    })
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    
   },
 
   /**

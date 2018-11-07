@@ -8,13 +8,14 @@ Page({
   data: {
     phone:"",
     upwd:""
+  
   },
   formSubmit:function(e){
       this.setData({
         phone:e.detail.value.phone,
         upwd:e.detail.value.upwd
       })
-      console.log("账号"+this.data.phone+" 密码 "+this.data.upwd)
+      //console.log("账号"+this.data.phone+" 密码 "+this.data.upwd)
    },
    clicklogin:function(options){
      if(!(this.data.phone.length>1 || this.data.upwd.length>1)){  //非空验证
@@ -37,26 +38,35 @@ Page({
           "Content-Type": "application/x-www-form-urlencoded"
         },
         success:(res)=>{
-          console.log(res.data);
+          res.data.data[0].isLogin = true
+          console.log(res.data.data[0]);
           if(res.data.code==1){
-            wx.showModal({
-              title:"成功",   //显示提示信息
-              content:"登录成功",
-              confirmText:"确定",
-              showCancel:false
-            });
-            wx.switchTab({  //登录成功 ，跳转到user页面
-              url: '/pages/user/user'
-            })
-            app.globalData.userInfo = res.data;
+                wx.showModal({
+                  title:"成功",   //显示提示信息
+                  content:"登录成功",
+                  confirmText:"确定",
+                  showCancel:false
+                });
+                wx.switchTab({  //登录成功 ，跳转到user页面
+                  url: '/pages/user/user'
+                })
+                wx.setStorage({
+                  key: 'zzz',
+                  data: res.data.data[0],
+                  success:()=>{
+
+                  }
+                })
+
+                
           
           }else{
-            wx.showModal({
-              title:"错误",   
-              content:"用户名或密码错误",
-              confirmText:"确定",
-              showCancel:false
-            });
+                wx.showModal({
+                  title:"错误",   
+                  content:"用户名或密码错误",
+                  confirmText:"确定",
+                  showCancel:false
+                });
           }
           
         }
