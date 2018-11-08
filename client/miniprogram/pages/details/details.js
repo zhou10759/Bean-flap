@@ -5,6 +5,13 @@ Page({
    * 页面的初始数据
    */
   data: {
+    commentslist:[],
+    iscomments:true
+  },
+  comments:function(){
+    wx.navigateTo({
+      url: '/pages/comments/comments'
+  })
 
   },
 
@@ -13,6 +20,22 @@ Page({
    */
   onLoad: function (options) {
     console.log(options)
+     wx.request({
+       url:"http://127.0.0.1:3000/user/comment",
+       data:{id:options.id},
+       success:(res)=>{
+         console.log(res.data.code)
+        if(res.data.code==1){
+          this.setData({
+            commentslist:res.data.result
+          })
+        }else{
+          this.setData({
+            iscomments:false
+          })
+        }
+       }
+     })
   },
 
   /**

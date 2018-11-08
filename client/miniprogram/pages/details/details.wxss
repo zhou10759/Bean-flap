@@ -136,7 +136,7 @@
 .comment_footer{
     text-align: center;
     margin-top:10px;
-    color:#00b600
+    color:#00b600;
 }
 .movie_footer{
     padding:15px 0;
