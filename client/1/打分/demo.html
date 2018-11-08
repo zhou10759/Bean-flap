@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>星星打分</title> 
+
+<style type="text/css"> 
+*{margin:0;padding:0;list-style-type:none;}
+a,img{border:0;}
+body{font:12px/180% Arial, Helvetica, sans-serif, "新宋体";}
+/* starWrapper */
+.starWrapper{border:1px solid #FFCC00;padding:5px;width:110px;height:12px;overflow:hidden;margin:30px auto 0 auto;} 
+.starWrapper img{cursor:pointer;float:left;margin:0 2px 0 0;display:inline;} 
+</style> 
+<script type="text/javascript"> 
+function rate(obj,oEvent){ 
+
+	var imgSrc = 'images/star.gif'; 
+	var imgSrc_2 = 'images/star-hover.gif'; 
+
+	if(obj.rateFlag) return; 
+	var e = oEvent || window.event; 
+	var target = e.target || e.srcElement;  
+	var imgArray = obj.getElementsByTagName("img"); 
+	for(var i=0;i<imgArray.length;i++){ 
+		imgArray[i]._num = i; 
+		imgArray[i].onclick=function(){ 
+			if(obj.rateFlag)
+			return; 
+			obj.rateFlag=true; 
+			alert(this._num+1); 
+		}; 
+	} 
+	
+	if(target.tagName=="IMG"){ 
+		for(var j=0;j<imgArray.length;j++){ 
+			if(j<=target._num){ 
+				imgArray[j].src=imgSrc_2; 
+			}else{ 
+				imgArray[j].src=imgSrc; 
+			} 
+		} 
+	}else{ 
+		for(var k=0;k<imgArray.length;k++){ 
+			imgArray[k].src=imgSrc; 
+		} 
+	} 
+	
+} 
+</script> 
+<body> 
+
+<p class="starWrapper" onmouseover="rate(this,event)"> 
+	<img src="images/star.gif" title="很差" />
+	<img src="images/star.gif" title="一般" />
+	<img src="images/star.gif" title="不错" />
+	<img src="images/star.gif" title="好评" />
+	<img src="images/star.gif" title="赞一个" /> 
+</p>
+
+<p class="starWrapper" onmouseover="rate(this,event)"> 
+	<img src="images/star.gif" title="很差" />
+	<img src="images/star.gif" title="一般" />
+	<img src="images/star.gif" title="不错" />
+	<img src="images/star.gif" title="好评" />
+	<img src="images/star.gif" title="赞一个" /> 
+</p>
+
+<p class="starWrapper" onmouseover="rate(this,event)"> 
+	<img src="images/star.gif" title="很差" />
+	<img src="images/star.gif" title="一般" />
+	<img src="images/star.gif" title="不错" />
+	<img src="images/star.gif" title="好评" />
+	<img src="images/star.gif" title="赞一个" /> 
+</p>
+
+<p class="starWrapper" onmouseover="rate(this,event)"> 
+	<img src="images/star.gif" title="很差" />
+	<img src="images/star.gif" title="一般" />
+	<img src="images/star.gif" title="不错" />
+	<img src="images/star.gif" title="好评" />
+	<img src="images/star.gif" title="赞一个" /> 
+</p>
+
+</body> 
+</html> 
+
