@@ -6,7 +6,8 @@
         <button type="default" wx:if="{{isLogin}}" bindtap="quit">退出</button>
     </view>
     <view class="user_headPortrait">
-        <image src="http://pic.51yuansu.com/pic3/cover/00/94/67/58dcd69ac0bf8_610.jpg" ></image>
+        <image src="http://pic.51yuansu.com/pic3/cover/00/94/67/58dcd69ac0bf8_610.jpg"  wx:if="{{!isLogin}}" mode="aspectFill" lazy-load></image>
+         <image src="{{list.headportrait}}"  wx:if="{{isLogin}}" mode="aspectFill" lazy-load></image>
     </view>
     <view class="user_str">
        <text wx:if="{{!isLogin}}"> 未登录</text>

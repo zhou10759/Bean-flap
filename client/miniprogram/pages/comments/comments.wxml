@@ -6,15 +6,17 @@
             点击星星评分
         </view>
         <view class="comments_d2_2">
-            <text class="xinxin1">★★★★★</text>
-            <text class="xinxin2">★★★★★</text>
-        </view>
-        <textarea placeholder="写几句评价吧..." class="comments_d2_3" ></textarea>
-        <view class="comments_d2_4">
-            <button >确定</button>
-        </view>
 
-        <view class="comments_d2_5">
+          <view class="comments_d2_2_2" >
+                 <image src="{{item.url}}" class="xinxin2" wx:for="{{imagelist1}}" wx:key="index" data-index="{{index}}"  bindtap="clickscore" mode="aspectFill" lazy-load></image>
+          </view>
+        </view>
+            <textarea placeholder="写几句评价吧..." class="comments_d2_3" name="textarea"   bindblur="bindTextAreaBlur"></textarea>
+            <view class="comments_d2_4">
+                <button  bindtap="submitcomment">确定</button>
+            </view>
+
+        <view class="comments_d2_5" bindtap="clear">
             删除评分
         </view>
 </view>

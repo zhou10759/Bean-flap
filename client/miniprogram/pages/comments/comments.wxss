@@ -20,15 +20,29 @@ page{
     margin-top:10px;
     text-align: center;
     font-size:30px;
+    position: relative;
+    height:40px;
+}
+.comments_d2_2_1{
+    position: absolute;
+    top:0;
+    left:50%;
+    margin-left:-35px;
+}
+.comments_d2_2_2{
+    position: absolute;
+    top:0;
+    left:50%;
+    margin-left:-35px;
 }
 .xinxin1{
-    color:#ddd;
-    position: absolute;
-    left:126px;
-
+    width:15px;
+    height:15px;
 }
 .xinxin2{
-    color:#f19e38;
+    width:15px;
+    height:15px;
+    z-index: -10;
 
 }
 .comments_d2_3{

@@ -119,15 +119,8 @@
     margin-left:10px;
 }
 .xinxi_xingxing1{
-    color:#9b9b9b;
-}
-.xinxi_xingxing2{
-    display: inline;
-  color:#f19e38;
-  overflow:hidden;
-  position: absolute;
-  left:121px;
-  width:50%;
+    width:15px;
+    height:15px;
 }
 .comment_xinxi .xinxi_time{
     color:#999;

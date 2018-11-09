@@ -43,8 +43,7 @@
                 <view class="comment_xinxi">
                     <view class="xinxi_name">
                         {{item.uname}}
-                        <text class="xinxi_xingxing1">★★★★★</text>
-                        <text class="xinxi_xingxing2">★★★★★</text>
+                        <image class="xinxi_xingxing1" wx:for="{{imagelist1}}" src="{{item.url}}" wx:key="index" mode="aspectFill" lazy-load></image>
                     </view>
                     <view class="xinxi_time">
                        {{item.commenttime}}

@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    list:[{phone:"",uname:"",upwd:""}],
+    list:[{phone:"",uname:"",upwd:"",headportrait:""}],
     isLogin:false
   },
 

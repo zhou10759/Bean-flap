@@ -270,8 +270,9 @@ CREATE TABLE bean_comment(
     headportrait VARCHAR(128),
     uname VARCHAR(64),
     comments VARCHAR(256),
-    commenttime DATETIME,
-    commentscore INT
+    commenttime VARCHAR(128),
+    commentscore INT,
+    
 );
 INSERT INTO bean_comment VALUES(
 	NULL,1,"https://img3.doubanio.com/icon/up52057602-1.jpg","星夜流云","50/100 这部电影浪费了麦肯吉的纯真，特效设计想象力贫乏、美术指导有型无神，可能唯一优点是催眠效果一流，害得打算在过道狂奔的同场小朋友们集体安静如鸡。女主走入白雪世界的一瞬间让人想起了《纳尼亚传奇》，如果制作者们看过那部还觉得自己的拿得出手，那脸皮也真够厚的。","2018-11-3 10:12:30",6

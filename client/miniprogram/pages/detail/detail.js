@@ -8,7 +8,7 @@ Page({
     list:[],
     pageIndex:0,   //当前显示页码
      pageSize:18,    //每页数量
-     hasMore:true   //用于记录是否还有更多数据  
+     hasMore:true  //用于记录是否还有更多数据  
   },
   loadMore:function(){
     wx.request({
