@@ -1,4 +1,3 @@
-import { reverse } from "dns";
 
 // miniprogram/pages/comments/comments.js
 Page({
@@ -13,15 +12,10 @@ Page({
                 {url:"../../images/star.gif"},
                 {url:"../../images/star.gif"},
                 {url:"../../images/star.gif"}],
-
-    imagelist2:[{url:"../../images/star-hover.gif"},
-                {url:"../../images/star-hover.gif"},
-                {url:"../../images/star-hover.gif"},
-                {url:"../../images/star-hover.gif"},
-                {url:"../../images/star-hover.gif"} ],
     score:0,
     id:0,
-    list:[]
+    list:[],
+    isLogin:false
   },
   clickscore:function(e){
     var index = e.target.dataset.index;
@@ -29,9 +23,8 @@ Page({
     for(var i=0;i<=index;i++){
       nowlist[i].url = "../../images/star-hover.gif"
     }
-
-
     this.setData({imagelist1:nowlist})
+
     index=(index+1)*2
     this.setData({score:index})
   },
@@ -98,7 +91,6 @@ Page({
       key: 'zzz',
       success: (res)=>{
       var   nowlist = res.data
-     nowlist = nowlist.reverse()
         this.setData({list:nowlist})
       },
     })

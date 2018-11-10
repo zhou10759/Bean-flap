@@ -15,7 +15,6 @@ Page({
     wx.request({
       url:"http://127.0.0.1:3000/index/recent",
       success:(res) =>{
-       // console.log(res);
         res = res.data.slice(0,7);
         this.setData({
           list:res

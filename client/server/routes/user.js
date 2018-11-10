@@ -33,7 +33,7 @@ router.post("/register",(req,res)=>{
         }else{
             var sql  = "INSERT INTO `bean_user`(`id`, `headportrait`, `phone`, `uname`, `upwd`) VALUES (NULL,NULL,?,?,?)";
             pool.query(sql,[phone,uname,upwd],(err,result)=>{
-                console.log(result);
+    
                 res.send({code:"1",msg:"register succ"});
             })
         }

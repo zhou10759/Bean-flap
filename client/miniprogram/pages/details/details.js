@@ -8,17 +8,27 @@ Page({
     commentslist:[],
     iscomments:true,
     id:0,
-    imagelist1:[{url:"../../images/star.gif"},
-                {url:"../../images/star.gif"},
-                {url:"../../images/star.gif"},
-                {url:"../../images/star.gif"},
-                {url:"../../images/star.gif"}],
-    isLogin:false
+    imagelist1:"",
+    isLogin:false,
+    listscore:null
   },
   comments:function(){
-    wx.navigateTo({
-      url: '/pages/comments/comments?id='+this.data.id
-  })
+    var res = getApp().golbalData.userlist
+    wx.getStorage({
+      key: 'zzz',
+      success: (res)=>{
+      if(getApp().golbalData.isLogin){
+          wx.navigateTo({
+            url: '/pages/comments/comments?id='+this.data.id
+          })
+      }else{
+        wx.switchTab({  
+          url: '/pages/user/user'
+        })
+      }
+      }
+    })
+    
 
   },
 
@@ -33,40 +43,38 @@ Page({
        url:"http://127.0.0.1:3000/user/comment",
        data:{id:options.id},
        success:(res)=>{
-         //动态加载评分
-         var indexlist = res.data.result;
-
-         var nowlist = this.data.imagelist1;
-
-         for(var i =0;i<indexlist.length;i++){
-          var n=(indexlist[i].commentscore)/2;
-           for(var y = 0;y<n;y++){
-          
-            nowlist[y].url = "../../images/star-hover.gif"
-           }
-
-console.log(nowlist)
-           
-           [].push.apply(indexlist[i],nowlist);
-
- console.log(indexlist[i])
-         }
-         
-         
-        
-
-
         if(res.data.code==1){
+          var indexlist = res.data.result;
+        var imglist = this.data.imagelist1;
+        var list = []
+        for(var i = 0;i<indexlist.length;i++){
+          var n=(indexlist[i].commentscore)/2;
+          if(n==1){
+            indexlist[i].commentscore="../../images/star-hover.gif"
+          }else if(n==2){
+            indexlist[i].commentscore="../../images/star-hover2.png"
+          }else if(n==3){
+            indexlist[i].commentscore="../../images/star-hover3.png"
+          }else if(n==4){
+            indexlist[i].commentscore="../../images/star-hover4.png"
+          }else if(n==5){
+            indexlist[i].commentscore="../../images/star-hover5.png"
+          }
+          
+        }
           this.setData({
             commentslist:res.data.result
           })
-      
-
-        }else{
+          console.log(res.data.result)
+       }else{
           this.setData({
             iscomments:false
           })
         }
+         //动态加载评分
+
+
+        
        }
      })
   

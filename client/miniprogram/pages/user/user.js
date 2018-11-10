@@ -23,22 +23,7 @@ Page({
     
   },
   onLoad: function (options) {
-    wx.getStorage({
-      key: 'zzz',
-      success: (res)=>{
-        console.log(res.data);
-        if(res.data.isLogin){
-          this.setData({
-            list:res.data,
-            isLogin:true
-          })
-          wx.switchTab({  //登录成功 ，跳转到user页面
-            url: '/pages/user/user'
-          })
-        }
-       
-      },
-    })
+   
   },
 
   /**
@@ -52,7 +37,22 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
+    wx.getStorage({
+      key: 'zzz',
+      success: (res)=>{
 
+        if(res.data.isLogin){
+          this.setData({
+            list:res.data,
+            isLogin:true
+          })
+          wx.switchTab({  //登录成功 ，跳转到user页面
+            url: '/pages/user/user'
+          })
+        }
+       
+      },
+    })
   },
 
   /**

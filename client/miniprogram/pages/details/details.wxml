@@ -43,7 +43,7 @@
                 <view class="comment_xinxi">
                     <view class="xinxi_name">
                         {{item.uname}}
-                        <image class="xinxi_xingxing1" wx:for="{{imagelist1}}" src="{{item.url}}" wx:key="index" mode="aspectFill" lazy-load></image>
+                        <image class="xinxi_xingxing1" src="{{item.commentscore}}"  mode="aspectFit" lazy-load></image>
                     </view>
                     <view class="xinxi_time">
                        {{item.commenttime}}

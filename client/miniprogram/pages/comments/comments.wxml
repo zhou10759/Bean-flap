@@ -8,7 +8,7 @@
         <view class="comments_d2_2">
 
           <view class="comments_d2_2_2" >
-                 <image src="{{item.url}}" class="xinxin2" wx:for="{{imagelist1}}" wx:key="index" data-index="{{index}}"  bindtap="clickscore" mode="aspectFill" lazy-load></image>
+                 <image wx:for="{{imagelist1}}" src="{{item.url}}" class="xinxin2"  wx:key="index" data-index="{{index}}"  bindtap="clickscore" mode="aspectFill" lazy-load></image>
           </view>
         </view>
             <textarea placeholder="写几句评价吧..." class="comments_d2_3" name="textarea"   bindblur="bindTextAreaBlur"></textarea>

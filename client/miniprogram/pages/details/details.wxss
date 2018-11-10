@@ -119,8 +119,8 @@
     margin-left:10px;
 }
 .xinxi_xingxing1{
-    width:15px;
-    height:15px;
+   width:75px;
+    height:12px;
 }
 .comment_xinxi .xinxi_time{
     color:#999;

@@ -35,10 +35,7 @@ page{
     left:50%;
     margin-left:-35px;
 }
-.xinxin1{
-    width:15px;
-    height:15px;
-}
+
 .xinxin2{
     width:15px;
     height:15px;

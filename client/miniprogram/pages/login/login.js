@@ -39,8 +39,9 @@ Page({
         },
         success:(res)=>{
           res.data.data[0].isLogin = true
-          console.log(res.data.data[0]);
           if(res.data.code==1){
+            //设置登录状态
+              getApp().golbalData.isLogin=true
                 wx.showModal({
                   title:"成功",   //显示提示信息
                   content:"登录成功",
@@ -49,6 +50,13 @@ Page({
                 });
                 wx.switchTab({  //登录成功 ，跳转到user页面
                   url: '/pages/user/user'
+                })
+                wx.setStorage({
+                  key: 'zzz',
+                  data: res.data.data[0],
+                  success:()=>{
+
+                  }
                 })
                 wx.setStorage({
                   key: 'zzz',

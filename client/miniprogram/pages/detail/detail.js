@@ -37,6 +37,7 @@ Page({
    */
   onLoad: function (options) {
     this.loadMore()
+
   },
 
   /**

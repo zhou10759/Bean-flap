@@ -29,6 +29,6 @@ App({
     
   },
   golbalData:{
-    userInfo:{}
+    isLogin:null
   }
 })
