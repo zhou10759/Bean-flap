@@ -36,9 +36,10 @@
   flex-direction: column;
   position: relative;
   width:100px;
+  height:210px;
   margin-left:12rpx;
 }
-.video_1_main_d1 image{
+.video_1_main_d1 navigator image{
   width:100px;
   height:145px;
   margin:16rpx 0 10rpx 0;
@@ -47,6 +48,16 @@
   float:left;
   position:relative;
 }
+.video_xingxing text{
+  font-size:12px;
+  text-align: center
+}
+.image_score{
+  width:10px;
+  height:10px;
+}
+
+
 
 
 /**/

@@ -210,6 +210,38 @@ CREATE TABLE bean_movie(
     title VARCHAR(64),
     score FLOAT
 );
+INSERT INTO bean_movie VALUES(
+     NULL,"https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2529206747.webp",
+     "西虹市首富",6.6
+);
+INSERT INTO bean_movie VALUES(
+     NULL,"https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2519070834.webp",
+     "我不是药神",9.0
+);
+INSERT INTO bean_movie VALUES(
+     NULL,"https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2534071656.webp",
+     "冰海陷落",7.2
+);
+INSERT INTO bean_movie VALUES(
+     NULL,"https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2516145559.webp",
+     "基伯龙三日",7.3
+);
+INSERT INTO bean_movie VALUES(
+     NULL,"https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2538243841.webp",
+     "刺心",6.9
+);
+INSERT INTO bean_movie VALUES(
+     NULL,"https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2529571873.webp",
+     "一出好戏",7.2
+);
+INSERT INTO bean_movie VALUES(
+     NULL,"https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2531887203.webp",
+     "反弹风暴3",5.6
+);
+INSERT INTO bean_movie VALUES(
+     NULL,"https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2528357976.webp",
+     "修女",6.0
+);
 
 #第一列 电视剧  teleplay
 
@@ -220,6 +252,36 @@ CREATE TABLE bean_teleplay(
     score FLOAT
 );
 
+INSERT INTO bean_teleplay VALUES(
+     NULL,"https://img1.doubanio.com/view/photo/m_ratio_poster/public/p2460165077.jpg",
+     "如懿传",7.4
+);
+INSERT INTO bean_teleplay VALUES(
+     NULL,"https://img3.doubanio.com/view/photo/m_ratio_poster/public/p2539081005.jpg",
+     "风味人间",9.3
+);
+INSERT INTO bean_teleplay VALUES(
+     NULL,"https://img3.doubanio.com/view/photo/m_ratio_poster/public/p2533959773.jpg",
+     "恶魔城 第二季",8.1
+);
+INSERT INTO bean_teleplay VALUES(
+     NULL,"https://img3.doubanio.com/view/photo/m_ratio_poster/public/p2538863432.jpg",
+     "将夜",7.1
+);
+INSERT INTO bean_teleplay VALUES(
+     NULL,"https://img3.doubanio.com/view/photo/m_ratio_poster/public/p2516911622.jpg",
+     "原来你还在这里",7.8
+);
+INSERT INTO bean_teleplay VALUES(
+     NULL,"https://img1.doubanio.com/view/photo/m_ratio_poster/public/p2535085957.jpg",
+     "生活大爆炸 第十二季",9.4
+);
+INSERT INTO bean_teleplay VALUES(
+     NULL,"https://img3.doubanio.com/view/photo/m_ratio_poster/public/p2530356844.jpg",
+     "纸牌屋 第六季",5.6
+);
+
+
 #第一列 综艺  variety
 
 CREATE TABLE bean_variety(
@@ -228,6 +290,35 @@ CREATE TABLE bean_variety(
     title VARCHAR(64),
     score FLOAT
 );
+INSERT INTO bean_variety VALUES(
+     NULL,"https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2538816286.webp",
+     "明星大侦探 第四季",9.4
+);
+INSERT INTO bean_variety VALUES(
+     NULL,"https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2538060789.webp",
+     "吐槽大会 第三季",6.8
+);
+INSERT INTO bean_variety VALUES(
+     NULL,"https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2537774816.webp",
+     "声入人心",9.0
+);
+INSERT INTO bean_variety VALUES(
+     NULL,"https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2536785404.webp",
+     "超新星全运会",6.9
+);
+INSERT INTO bean_variety VALUES(
+     NULL,"https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2539335911.webp",
+     "新西游记 第六季",9.7
+);
+INSERT INTO bean_variety VALUES(
+     NULL,"https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2537938189.webp",
+     "风味实验室",7.9
+);
+INSERT INTO bean_variety VALUES(
+     NULL,"https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2538192328.webp",
+     "野生厨房",6.7
+);
+
 
 #用户表
 CREATE TABLE bean_user(
@@ -271,7 +362,7 @@ CREATE TABLE bean_comment(
     uname VARCHAR(64),
     comments VARCHAR(256),
     commenttime VARCHAR(128),
-    commentscore INT,
+    commentscore INT
     
 );
 INSERT INTO bean_comment VALUES(

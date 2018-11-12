@@ -6,7 +6,7 @@
 }
 
 .movie_img{
-    width:90px;
+    width:30%;
     text-align: center;
     display:flex;
     flex-direction: column;

@@ -38,7 +38,6 @@ Page({
       showCancel:false
     });
       return ;
-      console.log(1);
     }else if(!reguname.test(this.data.uname)){
       wx.showModal({
         title:"错误",   //显示提示信息
@@ -47,7 +46,6 @@ Page({
         showCancel:false
       });
       return ;
-      console.log(2);
     }else if(!regupwd.test(this.data.upwd)){
       wx.showModal({
         title:"错误",   //显示提示信息
@@ -56,7 +54,6 @@ Page({
         showCancel:false
       });
       return ;
-      console.log(3);
     }else{
     wx.request({
       url:"http://127.0.0.1:3000/user/register",
@@ -70,7 +67,6 @@ Page({
         "Content-Type": "application/x-www-form-urlencoded"
       },
       success:(res)=>{
-        console.log(res.data);
         if(res.code==1){
               wx.showModal({
                 title:"成功",   //显示提示信息

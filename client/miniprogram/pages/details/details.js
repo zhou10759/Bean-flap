@@ -13,21 +13,16 @@ Page({
     listscore:null
   },
   comments:function(){
-    var res = getApp().golbalData.userlist
-    wx.getStorage({
-      key: 'zzz',
-      success: (res)=>{
       if(getApp().golbalData.isLogin){
-          wx.navigateTo({
-            url: '/pages/comments/comments?id='+this.data.id
-          })
+            wx.navigateTo({
+              url: '/pages/comments/comments?id='+this.data.id
+            })
       }else{
-        wx.switchTab({  
-          url: '/pages/user/user'
-        })
+            wx.switchTab({  
+              url: '/pages/user/user'
+            })
       }
-      }
-    })
+     
     
 
   },
@@ -65,7 +60,6 @@ Page({
           this.setData({
             commentslist:res.data.result
           })
-          console.log(res.data.result)
        }else{
           this.setData({
             iscomments:false

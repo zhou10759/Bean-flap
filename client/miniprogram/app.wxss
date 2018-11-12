@@ -1,7 +1,7 @@
  page{
    color:#333;
  }
- .comment_d1, .comment_d2, .comment_d3{
+.comment_d1, .comment_d2, .comment_d3{
   color:#9b9b9b;
   font-size:12px;
 }

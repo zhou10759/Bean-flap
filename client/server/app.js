@@ -1,4 +1,3 @@
-//使用express构建web服务器 --11:25
 const express = require('express');
 
 //引入session模块 npm i -save session 下载session

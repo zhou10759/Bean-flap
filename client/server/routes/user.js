@@ -9,7 +9,6 @@ router.post("/login",(req,res)=>{
 
     pool.query(sql,[phone,upwd],(err,result)=>{
         if(err) throw err
-        console.log(result);
         if(result.length>0){
             res.send({code:"1",msg:"login succ",data:result})
         }else{
